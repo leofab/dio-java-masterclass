@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class DesafioControleFluxo {
@@ -11,8 +10,9 @@ public class DesafioControleFluxo {
         int segundoNumero = sc.nextInt();
         try {
             contar(primeiroNumero, segundoNumero);
+            sc.close();
         } catch (ParametrosInvalidosException e) {
-            //TODO: handle exception
+            System.out.println(e.getMessage());
         }
 
         
@@ -20,7 +20,8 @@ public class DesafioControleFluxo {
 
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
         if (parametroUm < parametroDois) {
-            throw new ParametrosInvalidosException();
+            System.out.println("O primeiro valor é menor que o segundo");
+            throw new ParametrosInvalidosException(null);
         } else {
             int contador = parametroUm - parametroDois;
             for (int i = 0; i <= contador; i++) {
@@ -28,4 +29,5 @@ public class DesafioControleFluxo {
             }
         }
     }
+    
 }
