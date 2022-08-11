@@ -1,6 +1,7 @@
 package contas;
 
 import operacoes.Operacoes;
+import user.Cliente;
 
 public abstract class Conta implements Operacoes {
 
@@ -9,6 +10,8 @@ public abstract class Conta implements Operacoes {
   protected int agencia;
   protected int numeroDaConta;
   protected double saldo;
+
+  protected Cliente cliente;
 
 
 

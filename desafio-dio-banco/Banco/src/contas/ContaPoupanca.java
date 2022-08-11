@@ -29,4 +29,14 @@ public class ContaPoupanca extends Conta {
   public void checarSaldo() {
 
   }
+
+  @Override
+  public void transferir(int agencia, int conta, double valor) {
+
+  }
+
+  @Override
+  public void transferir(Conta conta, double valor) {
+
+  }
 }
