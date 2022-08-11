@@ -2,7 +2,7 @@ package contas;
 
 import operacoes.Operacoes;
 
-public class Conta implements Operacoes {
+public abstract class Conta implements Operacoes {
   private int agencia;
   private int numeroDaConta;
   private double saldo;
@@ -26,17 +26,18 @@ public class Conta implements Operacoes {
   }
 
   @Override
-  public void sacar() {
+  public void sacar(double valor) {
 
   }
 
   @Override
-  public void depositar() {
+  public void depositar(double valor) {
 
   }
 
   @Override
-  public void checarSaldo() {
+  public void checarSaldo(int agencia, int conta, double valor) {
 
   }
+
 }

@@ -2,25 +2,10 @@ package contas;
 
 import operacoes.Operacoes;
 
-public class ContaPoupanca implements Operacoes {
+public class ContaPoupanca extends Conta {
 
-  private int agencia;
-  private int numeroContaP;
-
-  public int getAgencia() {
-    return agencia;
-  }
-
-  public int getNumeroContaP() {
-    return numeroContaP;
-  }
-
-  public void setAgencia(int agencia) {
-    this.agencia = agencia;
-  }
-
-  public void setNumeroContaP(int numeroContaP) {
-    this.numeroContaP = numeroContaP;
+  public ContaPoupanca(int agencia, int numeroDaConta, double saldo) {
+    super(agencia, numeroDaConta, saldo);
   }
 
   @Override
