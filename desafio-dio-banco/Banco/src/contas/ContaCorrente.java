@@ -1,6 +1,8 @@
 package contas;
 
-public class ContaCorrente {
+import operacoes.Operacoes;
+
+public class ContaCorrente implements Operacoes {
 
   private int agencia;
   private int numeroContaC;
@@ -28,5 +30,20 @@ public class ContaCorrente {
 
   public void setSaldo(double saldo) {
     this.saldo = saldo;
+  }
+
+  @Override
+  public void sacar() {
+
+  }
+
+  @Override
+  public void depositar() {
+
+  }
+
+  @Override
+  public void checarSaldo() {
+
   }
 }

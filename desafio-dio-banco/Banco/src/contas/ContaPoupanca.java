@@ -1,6 +1,8 @@
 package contas;
 
-public class ContaPoupanca {
+import operacoes.Operacoes;
+
+public class ContaPoupanca implements Operacoes {
 
   private int agencia;
   private int numeroContaP;
@@ -19,5 +21,20 @@ public class ContaPoupanca {
 
   public void setNumeroContaP(int numeroContaP) {
     this.numeroContaP = numeroContaP;
+  }
+
+  @Override
+  public void sacar() {
+
+  }
+
+  @Override
+  public void depositar() {
+
+  }
+
+  @Override
+  public void checarSaldo() {
+
   }
 }
