@@ -5,10 +5,10 @@ public class PilaresPoo {
   public void receberMensagem() {
     System.out.println("Recebendo mensagem");
   }
-  public void validarConexaoInternet() {
+  private void validarConexaoInternet() {
     System.out.println("Validando se está conectado a internet");
   }
-  public void salvarHistoricoMensagem() {
+  private void salvarHistoricoMensagem() {
     System.out.println("Salvando o histórico da mensagem");
   }
 }
