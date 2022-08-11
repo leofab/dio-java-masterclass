@@ -3,15 +3,14 @@ package contas;
 import operacoes.Operacoes;
 
 public abstract class Conta implements Operacoes {
-  private int agencia;
-  private int numeroDaConta;
-  private double saldo;
 
-  public Conta(int agencia, int numeroDaConta, double saldo) {
-    this.agencia = agencia;
-    this.numeroDaConta = numeroDaConta;
-    this.saldo = saldo;
-  }
+  protected int AGENCIA_PADRAO = 1;
+  protected static int SEQUENCIAL = 1;
+  protected int agencia;
+  protected int numeroDaConta;
+  protected double saldo;
+
+
 
   public int getAgencia() {
     return agencia;
@@ -36,8 +35,12 @@ public abstract class Conta implements Operacoes {
   }
 
   @Override
-  public void checarSaldo(int agencia, int conta, double valor) {
+  public void tranferir(Conta conta, double valor) {
 
   }
 
+  @Override
+  public double extrato() {
+    return 0;
+  }
 }

@@ -4,8 +4,15 @@ import operacoes.Operacoes;
 
 public class ContaPoupanca extends Conta {
 
-  public ContaPoupanca(int agencia, int numeroDaConta, double saldo) {
-    super(agencia, numeroDaConta, saldo);
+
+  @Override
+  public void tranferir(Conta conta, double valor) {
+
+  }
+
+  @Override
+  public double extrato() {
+    return 0;
   }
 
   @Override
