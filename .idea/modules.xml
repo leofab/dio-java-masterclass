@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProcessoSeletivo/ProcessoSeletivo.iml" filepath="$PROJECT_DIR$/ProcessoSeletivo/ProcessoSeletivo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UML-iphone-projeto/UML-iphone-projeto.iml" filepath="$PROJECT_DIR$/UML-iphone-projeto/UML-iphone-projeto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" filepath="$PROJECT_DIR$/desafio-dio-banco/desafio-dio-banco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dio-java.iml" filepath="$PROJECT_DIR$/.idea/dio-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dio-java-contaBanco/dio-java-contaBanco.iml" filepath="$PROJECT_DIR$/dio-java-contaBanco/dio-java-contaBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-vscode-ide/java-vscode-ide.iml" filepath="$PROJECT_DIR$/java-vscode-ide/java-vscode-ide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pilares-poo/pilares-poo.iml" filepath="$PROJECT_DIR$/pilares-poo/pilares-poo.iml" />
+    </modules>
+  </component>
+</project>
