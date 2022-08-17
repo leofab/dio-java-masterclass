@@ -18,6 +18,7 @@ public class ListaEncadeada<T> {
     for(int i = 0; i < this.size()-1; i++){
       noAuxiliar = noAuxiliar.getProximoNo();
     }
+    noAuxiliar.setProximoNo(novoNo);
   }
 
   private No<T> getNo(int index){
