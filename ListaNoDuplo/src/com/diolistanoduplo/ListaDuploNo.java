@@ -34,6 +34,7 @@ public class ListaDuploNo<T> {
   public void add(int index, T elemento){
     NoDuplo<T> noAuxiliar = getNo(index);
     NoDuplo<T> novoNo = new NoDuplo<>(elemento);
+    novoNo.setNoProximo(noAuxiliar);
 
     if(novoNo.getNoProximo() !=null){
       novoNo.setNoPrevio(noAuxiliar.getNoPrevio());
@@ -85,5 +86,17 @@ public class ListaDuploNo<T> {
 
   public int size(){
     return this.tamanhoLista;
+  }
+
+  @Override
+  public String toString() {
+    String strRetorno = "";
+    NoDuplo<T> noAuxiliar = primeiroNo;
+    for(int i = 0; i < size(); i++){
+      strRetorno += "[No{conteudo" + noAuxiliar.getConteudo() + "}--->";
+      noAuxiliar = noAuxiliar.getNoProximo();
+    }
+    strRetorno += "null";
+    return strRetorno;
   }
 }
