@@ -22,6 +22,8 @@ public class Sacola {
   private me.dio.sacola.enumeration.FormaPagamento FormaPagamento;
   private boolean fechada;
 
+  public Sacola() {}
+
   public Sacola(
           Long id,
           Cliente cliente,
@@ -34,6 +36,54 @@ public class Sacola {
     this.itens = itens;
     this.valorTotal = valorTotal;
     FormaPagamento = formaPagamento;
+    this.fechada = fechada;
+  }
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  public Cliente getCliente() {
+    return cliente;
+  }
+
+  public void setCliente(Cliente cliente) {
+    this.cliente = cliente;
+  }
+
+  public List<Item> getItens() {
+    return itens;
+  }
+
+  public void setItens(List<Item> itens) {
+    this.itens = itens;
+  }
+
+  public Double getValorTotal() {
+    return valorTotal;
+  }
+
+  public void setValorTotal(Double valorTotal) {
+    this.valorTotal = valorTotal;
+  }
+
+  public me.dio.sacola.enumeration.FormaPagamento getFormaPagamento() {
+    return FormaPagamento;
+  }
+
+  public void setFormaPagamento(me.dio.sacola.enumeration.FormaPagamento formaPagamento) {
+    FormaPagamento = formaPagamento;
+  }
+
+  public boolean isFechada() {
+    return fechada;
+  }
+
+  public void setFechada(boolean fechada) {
     this.fechada = fechada;
   }
 }
