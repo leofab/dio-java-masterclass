@@ -1,5 +1,5 @@
 package me.dio.sacola.enumeration;
 
-public class FormaPagamento {
-
+public enum FormaPagamento {
+  DINHEIRO, MAQUINETA;
 }
