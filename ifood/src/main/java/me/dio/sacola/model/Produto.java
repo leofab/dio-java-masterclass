@@ -7,10 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @AllArgsConstructor
 @Builder
@@ -20,7 +17,8 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 
 public class Produto {
-  @Id@GeneratedValue(strategy = GenerationType.AUTO)
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
   private String nome;
   private double valorUnitario;
