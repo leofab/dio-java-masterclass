@@ -30,4 +30,11 @@ public class Carro {
   public int hashCode() {
     return Objects.hash(marca);
   }
+
+  @java.lang.Override
+  public java.lang.String toString() {
+    return "Carro{" +
+            "marca='" + marca + '\'' +
+            '}';
+  }
 }
